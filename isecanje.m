@@ -37,7 +37,7 @@ function Y = isecanje(X)
     P = 0.99; % prag
     [M, N] = size(Y);
 
-    levo = 10;
+    levo = 1;
     while ((levo < N) && (sum(Y(:, levo))/255 > P*M))
         levo = levo + 1;
     end
